@@ -7,3 +7,12 @@
 //
 
 import UIKit
+
+extension UIView {
+    func upperLeft() {
+        
+    }
+    func upperRight(){
+        
+    }
+}
