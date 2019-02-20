@@ -9,11 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    //create lab and add to view
+    var labtxt: UILabel = {
+    let lab = UILabel()
+    lab.text = "hello world"
+    lab.backgroundColor = UIColor.red
+    lab.translatesAutoresizingMaskIntoConstraints = false
+    return lab
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        view.backgroundColor = .yellow
+        view.backgroundColor = .white
+        view.addSubview(labtxt)
+        labtxt.upperLeft(uv: self.view)
+        
     }
 
 
