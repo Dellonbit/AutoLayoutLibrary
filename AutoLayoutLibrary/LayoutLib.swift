@@ -40,5 +40,9 @@ extension UIView {
     func centerX(uv:UIView, top: CGFloat, leading: CGFloat, width: CGFloat, height: CGFloat) {
         
     }
+     //center X only
+    func centerY(uv:UIView, top: CGFloat, leading: CGFloat, width: CGFloat, height: CGFloat) {
+        
+    }
 
 }
