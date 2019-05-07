@@ -31,8 +31,8 @@ extension UIView {
     }
     //correct later for center xys
     func centerXY(uv:UIView, top: CGFloat, leading: CGFloat, width: CGFloat, height: CGFloat) {
-        self.centerYAnchor.constraint(equalTo: uv.centerYAnchor, constant: 300).isActive = true
-        self.centerXAnchor.constraint(equalTo: uv.centerXAnchor, constant: 10).isActive = true
+        self.centerYAnchor.constraint(equalTo: uv.centerYAnchor, constant: top).isActive = true
+        self.centerXAnchor.constraint(equalTo: uv.centerXAnchor, constant: leading).isActive = true
         self.widthAnchor.constraint(equalToConstant: width).isActive = true
         self.heightAnchor.constraint(equalToConstant: height).isActive = true
     }
