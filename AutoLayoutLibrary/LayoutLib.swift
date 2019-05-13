@@ -44,7 +44,7 @@ extension UIView {
     }
      //center Y only
     func centerY(uv:UIView, top: CGFloat, leading: CGFloat, width: CGFloat, height: CGFloat) {
-        self.centerYAnchor.constraint(equalTo: uv.centerYAnchor, constant: 10).isActive = true
+        self.centerYAnchor.constraint(equalTo: uv.centerYAnchor, constant: leading).isActive = true
         self.widthAnchor.constraint(equalToConstant: width).isActive = true
         self.heightAnchor.constraint(equalToConstant: height).isActive = true
     }
