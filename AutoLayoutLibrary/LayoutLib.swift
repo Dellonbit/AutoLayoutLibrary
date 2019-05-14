@@ -16,9 +16,9 @@ extension UIView {
         self.heightAnchor.constraint(equalToConstant: height).isActive = true
     }
     
-    func upperRight(uv:UIView, top: CGFloat, leading: CGFloat, width: CGFloat, height: CGFloat) {
+    func upperRight(uv:UIView, top: CGFloat, trailing: CGFloat, width: CGFloat, height: CGFloat) {
         self.topAnchor.constraint(equalTo: uv.topAnchor, constant: top).isActive = true
-        self.leadingAnchor.constraint(equalTo: uv.leadingAnchor, constant: leading).isActive = true
+        self.leadingAnchor.constraint(equalTo: uv.leadingAnchor, constant: trailing).isActive = true
         self.widthAnchor.constraint(equalToConstant: width).isActive = true
         self.heightAnchor.constraint(equalToConstant: height).isActive = true
     }
