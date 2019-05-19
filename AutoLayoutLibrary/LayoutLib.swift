@@ -29,6 +29,13 @@ extension UIView {
         self.widthAnchor.constraint(equalToConstant: width).isActive = true
         self.heightAnchor.constraint(equalToConstant: height).isActive = true
     }
+    
+    func lowerLeft(uv:UIView, bottom: CGFloat, trailing: CGFloat, width: CGFloat, height: CGFloat) {
+        self.bottomAnchor.constraint(equalTo: uv.bottomAnchor, constant: bottom).isActive = true
+        self.trailingAnchor.constraint(equalTo: uv.trailingAnchor, constant: trailing).isActive = true
+        self.widthAnchor.constraint(equalToConstant: width).isActive = true
+        self.heightAnchor.constraint(equalToConstant: height).isActive = true
+    }
     //correct later for center xys
     func centerXY(uv:UIView, top: CGFloat, leading: CGFloat, width: CGFloat, height: CGFloat) {
         self.centerYAnchor.constraint(equalTo: uv.centerYAnchor, constant: top).isActive = true
